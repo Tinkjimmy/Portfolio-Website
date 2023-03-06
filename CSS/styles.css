@@ -82,11 +82,16 @@
 
 .page-footer {
   
-   text-align: center;
-   
-   margin-bottom: auto 0;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px; 
+  
    
    }
+
+
 
 .profile__portrait {
    float: left;
@@ -97,15 +102,21 @@
 }
 
 .profile {
-   max-width: 700px;
-   margin: 0 auto;
-   
+   max-width: 100%;
+   margin: auto;
+   padding-top: 150px;
 }
 
 .page-header {
    display: flex;
    width : 100%;
-   padding : 20px
+   padding : 20px;
+   background-color: #b9e6d3;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   
 
 }
 
@@ -131,11 +142,15 @@
    margin-left: 15px;
 }
 
+
+
 .project-list {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    grid-gap: 20px;
 }
+
+
 
 
 
@@ -146,6 +161,11 @@
   }
   
   @supports (display: grid) {
+   .work__grid{
+      margin-top: 200px;
+     
+   }
+
    .grid {
      display: grid;
      grid-template-columns: 1fr 1fr 1fr;
@@ -173,18 +193,28 @@
    }
   }
   .about-main {
+   padding-top: 100px;
+   padding-bottom: 0px;
    text-align: center;
+   min-height: calc(100vh - 70px);
+   max-width: 100%;
 
+   }
+   .berlin-illustration{
+      max-width: 100%;
+      margin: auto;
    }
 
    .about-list {
       list-style-type: none;
       margin: auto;
+      text-align: center;
    }
 
 
    .contactmain {
       text-align: center;
+      padding-top: 200px;
    }
    .forms {
       line-height: 200px;
@@ -263,5 +293,43 @@
      font-size: 22px;
    }
  }
+
+ form {
+   max-width: 600px;
+   margin: 0 auto;
+ }
+ 
+ label {
+   display: block;
+   margin-bottom: 8px;
+ }
+ 
+ input[type="text"],
+ input[type="email"],
+ textarea {
+   display: block;
+   width: 100%;
+   padding: 8px;
+   margin-bottom: 16px;
+   border-radius: 4px;
+   border: 1px solid #ccc;
+ }
+ 
+ button[type="submit"] {
+   display: block;
+   margin-top: 16px;
+   padding: 8px 16px;
+   border-radius: 4px;
+   background-color: #4CAF50;
+   color: white;
+   border: none;
+   cursor: pointer;
+ }
+ 
+ button[type="submit"]:hover {
+   background-color: #3e8e41;
+ }
+ 
+ _______________________________
 
  
