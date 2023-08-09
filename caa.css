@@ -1,0 +1,79 @@
+/* Navbar styles */
+
+.navbar {
+  background-color: #f8f9fa;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  display: none; /* Hide by default */
+}
+
+.navbar-toggler-icon {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url('https://cdn.iconscout.com/icon/free/png-256/menu-462685.png');
+  background-size: cover;
+}
+
+/* .navbar-collapse {
+  display: none;
+} */
+
+.navbar-collapse.show {
+  display: block;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.nav-item {
+  margin-bottom: 0.5rem;
+}
+
+.nav-link {
+  color: #212529;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Media queries */
+
+@media (max-width: 767px) {
+  /* Show the hamburger menu only on mobile devices */
+  .navbar-toggler {
+    display: block;
+  }
+  
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #f8f9fa;
+    padding: 1rem;
+  }
+  
+  .navbar-nav {
+    margin-top: 0;
+  }
+}
