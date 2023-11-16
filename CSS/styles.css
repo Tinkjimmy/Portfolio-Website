@@ -71,7 +71,7 @@ button {
 }
 
 /* eventually delete */
-#button_cv{
+#button_cv {
   display: inline-block;
   font-family: inherit;
   background-color: var(--colorvisited);
@@ -82,12 +82,7 @@ button {
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition-duration: 0.2s;
   transition-property: opacity;
-
 }
-
-
-
-
 
 button:focus {
   cursor: pointer;
@@ -104,7 +99,6 @@ button:focus {
   height: 70px;
 }
 
-
 .page-headerimg {
   width: 250px;
 }
@@ -113,7 +107,6 @@ header {
   display: flex;
   flex-direction: row;
 }
-
 
 .profile__portrait {
   float: left;
@@ -124,10 +117,10 @@ header {
 .profile {
   max-width: 100%;
   margin: auto;
-margin-top: 30px;
+  margin-top: 30px;
   padding-top: 150px;
 }
-.profile-text{
+.profile-text {
   text-align: center;
   margin-top: 40px;
 }
@@ -155,7 +148,6 @@ margin-top: 30px;
 .grid__item {
   display: inline-block;
   width: 33%;
- 
 }
 
 @supports (display: grid) {
@@ -183,11 +175,11 @@ margin-top: 30px;
   }
 }
 .about-main {
-   display: flex;
+  display: flex;
   padding-top: 100px;
   padding-bottom: 0px;
-flex-direction: column;
-align-items: center;
+  flex-direction: column;
+  align-items: center;
   min-height: calc(100vh - 70px);
   max-width: 100%;
 }
@@ -197,7 +189,7 @@ align-items: center;
   margin: 0 auto;
 }
 .about-list-item {
-   text-align: center;
+  text-align: center;
 }
 
 .contactmain {
@@ -289,65 +281,26 @@ button[type="submit"]:hover {
   margin: 0 auto;
   padding: 0;
   max-width: 1200px;
+  flex-wrap: wrap;
+  justify-content: space-between; 
 }
 
 .grid__item {
   background-color: var(--colorD);
-padding: 0;
+  padding: 0;
   border-radius: 6px;
   box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.7);
-  overflow: hidden;
-  
+ 
 }
 
 .grid-content {
   padding: 15px;
- height :100%;
+  
 }
 
 .project-img {
   width: 100%;
+  height: 120px;
+  object-fit: cover;
 }
 
-
-/* Base Button Styles */
-.material-button {
-  
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: 500;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  background-color: #2196F3; /* Material Blue */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s, box-shadow 0.3s;
-  
-}
-  
-
-/* Button Hover State */
-.material-button:hover {
-  background-color: #1565C0; /* Darker shade on hover */
-}
-
-/* Button Ripple Effect (using ::after pseudo-element) */
-.material-button::after {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.4); /* Ripple color with transparency */
-  transform: scale(0);
-  animation: ripple 0.6s linear;
-}
-
-/* Ripple Animation Keyframes */
-@keyframes ripple {
-  to {
-    transform: scale(4);
-    opacity: 0;
-  }
-}
