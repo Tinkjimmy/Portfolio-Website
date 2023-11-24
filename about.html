@@ -28,11 +28,7 @@
 
   <body>
     <header>
-      <nav
-        class="navbar navbar-expand-md navbar-light"
-        style="background-color: #4ff7f4"
-        ;
-      >
+      <nav class="navbar navbar-expand-md navbar-light" ;>
         <img
           src="img/logo.png"
           alt="logo"
@@ -42,11 +38,11 @@
         <button
           class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
           data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style="background-color: aliceblue"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -54,25 +50,25 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav d-flex justify-content-end">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">
-                <h3>Home</h3>
-              </a>
+              <a class="nav-link" href="index.html"
+                ><h3 style="color: aliceblue">Home</h3>
+               </a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">
-                <h3>About</h3>
-                <span class="sr-only">(current)</span>
-              </a>
+              <a class="nav-link" href="about.html"
+                ><h3 style="color: aliceblue;text-decoration: underline;">About</h3></a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="work.html">
-                <h3>Projects</h3>
-              </a>
+              <a class="nav-link" href="work.html"
+                ><h3 style="color: aliceblue">Projects</h3></a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">
-                <h3>Contacts</h3>
-              </a>
+              <a class="nav-link" href="contact.html"
+                ><h3 style="color: aliceblue">Contacts</h3> <span class="sr-only">(current)</span></a
+              >
             </li>
           </ul>
         </div>
@@ -81,17 +77,83 @@
 
     <main class="about-main">
      
-        <h1>About</h1>
+        <h1>What about me?</h1>
 
-        <p>This page is about myself. These are my Hobbies-Interests:</p>
+        <!-- <p>This page is about myself. These are my Hobbies-Interests:</p>
         <ul class="about-list">
           <li class="about-list-item">Front-end development</li>
           <li class="about-list-item">Back-end development</li>
           <li class="about-list-item">Test driven development</li>
           <li class="about-list-item">Swimming</li>
-        </ul>
+        </ul> -->
 
-        <a href="files/cv.pdf"  id="button_cv" target="_blank" download
+<p style="padding: 20px; margin-left: 15%; margin-right: 15%;">I'm an Italian developer based in Torino. While finishing med-school i decided that the medical field wasn’t a good fit for me anymore and a dived into what was always my renegade passion: computers and the web.
+  So while working in hospital administration I decided to enroll in the ll-Stack Web Development course at CareerFoundry
+  full-Stack Web Development course at CareerFoundry and I finally found a way to make my “up in the air” passion into something concrete.</p>        
+    <table>
+      <tr>
+          <th>Technology</th>
+          <th>Skill Level</th>
+      </tr>
+      <tr>
+          <td>HTML</td>
+          <td>Beginner</td>
+      </tr>
+      <tr>
+          <td>CSS</td>
+          <td>Beginner</td>
+      </tr>
+      <tr>
+          <td>JavaScript</td>
+          <td>Beginner</td>
+      </tr>
+      <tr>
+        <td>Bootsrap</td>
+        <td>Beginner</td>
+    </tr>
+    
+      <tr>
+          <td>React</td>
+          <td>Beginner</td>
+      </tr>
+      <tr>
+          <td>React Native</td>
+          <td>Beginner</td>
+      </tr>
+      <tr>
+          <td>Angular</td>
+          <td>Beginner</td>
+      </tr>
+      <tr>
+          <td>Node.js</td>
+          <td>Beginner</td>
+      </tr>
+      <tr>
+          <td>Express</td>
+          <td>Beginner</td>
+      </tr>
+      <tr>
+        <td>Jest</td>
+        <td>Beginner</td>
+    </tr>
+      <td>Bootstrap</td>
+      <td>Beginner</td>
+  </tr>
+  <tr>
+    <td>Pupeteer</td>
+    <td>Beginner</td>
+</tr>
+<tr>
+  <td>Adroid Studio</td>
+  <td>Beginner</td>
+</tr>
+<tr>
+  <td>Atatus</td>
+  <td>Beginner</td>
+</tr>
+  </table>
+
+        <a href="files/cv.pdf" style="margin-top: 20px;" id="button_cv" target="_blank" download
           >Download my CV</a
         >
       
@@ -100,7 +162,7 @@
     </main>
 
     <footer class="page-footer">
-      <p>Find me on</p>
+      <p style="color: aliceblue;">Look me up</p>
       <div class="social-media">
         <a href="https://twitter.com/GiacomoDuca" class="footer-img"
           ><img src="img/twitter_icon.svg" alt="Twitter"
@@ -113,6 +175,23 @@
         /></a>
       </div>
     </footer>
-    <script src="js/tota11y.min.js"></script>
-  </body>
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="js/jsportfolio.js"></script>
+  <script src="js/tota11y.min.js"></script>
+</body>
 </html>

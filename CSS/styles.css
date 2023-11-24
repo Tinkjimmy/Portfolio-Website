@@ -89,18 +89,72 @@ button:focus {
   opacity: 0.8;
 }
 
+ /* nav */
+
+ nav {
+  background-color: #2C3E50;
+ }
 .navigation-list__item--active {
   text-decoration: none;
 }
 
-.page-footer {
-  text-align: center;
-  margin-bottom: 20px;
-  height: 70px;
+.navbar {
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
+  height: 140px; /* Set your default height */
 }
 
+.navbar-toggler {
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  } */
+/* } */
+
+.show {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.navbar-expand-md.show {
+  height: 300px; /* Set your expanded height */
+}
+
+
+
+.show {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.hide {
+  animation: fadeOut 0.3s ease-in-out;
+}
+
+.page-footer {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #aec5dd ;
+    margin-bottom: 20px;
+  height: 70px;
+
+  height: 100px;
+  
+}
+
+
+
 .page-headerimg {
-  width: 250px;
+  width: 100px;
 }
 
 header {
@@ -139,6 +193,7 @@ header {
   margin-left: 15px;
 }
 
+
 .project-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -176,6 +231,7 @@ header {
 }
 .about-main {
   display: flex;
+  background-color: #ECF0F1;
   padding-top: 100px;
   padding-bottom: 0px;
   flex-direction: column;
@@ -304,3 +360,13 @@ button[type="submit"]:hover {
   object-fit: cover;
 }
 
+.links{
+  text-align: center;
+}
+
+.grid-content ul {
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
