@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8" />
@@ -48,11 +50,10 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav d-flex justify-content-end">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html"
+            <li class="nav-item">
+              <a class="nav-link"  href="index.html"
                 ><h3 style="color: aliceblue">Home</h3>
-               </a
-              >
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html"
@@ -64,9 +65,12 @@
                 ><h3 style="color: aliceblue">Projects</h3></a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="contact.html"
-                ><h3 style="color: aliceblue; text-decoration: underline;">Contacts</h3> <span class="sr-only">(current)</span></a
+                ><h3 style="color: aliceblue; text-decoration: underline">
+                  Contacts
+                </h3>
+                <span class="sr-only">(current)</span></a
               >
             </li>
           </ul>
@@ -75,57 +79,95 @@
     </header>
 
     <main class="contactmain">
-     
       <h1 class="contactmain.item" style="font-size: 50px">Write Me</h1>
       <div>
         <p>
-            Giacomo Duca<br>
-            E-Mail: <a href="mailto:tinkjimmy938@gmail.com">tinkjimmy938@gmail.com</a><br>
-            Tel: <a href="tel:+393331364256">+39 333 1364 256</a>
+          Giacomo Duca<br />
+          E-Mail:
+          <a href="mailto:tinkjimmy938@gmail.com">tinkjimmy938@gmail.com</a
+          ><br />
+          Tel: <a href="tel:+393331364256">+39 333 1364 256</a>
         </p>
-    </div>
-    <!-- Contact form -->
-    <div id="contact-form-wrapper">
-        <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
-            <input type="hidden" name="access_key" value="f70a05d6-c456-4dd6-ac69-a21eecf0e83c">
-            <input type="hidden" name="subject" value="New Submission from Portfolio website">
-            <input type="hidden" name="from_name" value="haendler.dev">
-
-            <label class="standard-label" for="contact-email">Email: </label><br>
-            <input class="text-input" type="email" id="contact-email" name="email" required><br>
-
-            <label class="standard-label" for="contact-tel">Telephone: </label><br>
-            <input class="text-input" type="tel" id="contact-tel" name="Phone Number"><br>
-
-            <label class="standard-label" for="contact-message">Message: </label><br>
-            <textarea class="text-input" id="contact-message" name="message" required
-                maxlength="800"></textarea><br>
-
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-            <input type="hidden" name="redirect" value="https://web3forms.com/success">
-            <input type="submit" id="send-message" value="Send message">
-
-        </form>
-    </div>
-  
-
-
-    
-    <div class="links">
-      <p style="font-size: 20px">or find me on</p>
-      <div class="social-media">
-        <a href="https://twitter.com/GiacomoDuca" class="footer-img"
-          ><img src="img/twitter_icon.svg" alt="Twitter"
-        /></a>
-        <a href="https://www.linkedin.com/feed/" class="footer-img"
-          ><img src="img/linkedin_icon.svg" alt="LinkedIn"
-        /></a>
-        <a href="https://github.com/Tinkjimmy" class="footer-img"
-          ><img src="img/github__icon.svg" alt="Github"
-        /></a>
       </div>
-    </div>
-  </main>
+      <!-- Contact form -->
+      <div id="contact-form-wrapper">
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          id="contact-form"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="f70a05d6-c456-4dd6-ac69-a21eecf0e83c"
+          />
+          <input
+            type="hidden"
+            name="subject"
+            value="New Submission from Portfolio website"
+          />
+          <input type="hidden" name="from_name" value="haendler.dev" />
+
+          <label class="standard-label" for="contact-email">Email: </label
+          ><br />
+          <input
+            class="text-input"
+            type="email"
+            id="contact-email"
+            name="email"
+            required
+          /><br />
+
+          <label class="standard-label" for="contact-tel">Telephone: </label
+          ><br />
+          <input
+            class="text-input"
+            type="tel"
+            id="contact-tel"
+            name="Phone Number"
+          /><br />
+
+          <label class="standard-label" for="contact-message">Message: </label
+          ><br />
+          <textarea
+            class="text-input"
+            id="contact-message"
+            name="message"
+            required
+            maxlength="800"
+          ></textarea
+          ><br />
+
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="hidden"
+            style="display: none"
+          />
+          <input
+            type="hidden"
+            name="redirect"
+            value="https://web3forms.com/success"
+          />
+          <input type="submit" id="send-message" value="Send message" />
+        </form>
+      </div>
+
+      <div class="links">
+        <p style="font-size: 20px">or find me on</p>
+        <div class="social-media">
+          <a href="https://twitter.com/GiacomoDuca" class="footer-img"
+            ><img src="img/twitter_icon.svg" alt="Twitter"
+          /></a>
+          <a href="https://www.linkedin.com/feed/" class="footer-img"
+            ><img src="img/linkedin_icon.svg" alt="LinkedIn"
+          /></a>
+          <a href="https://github.com/Tinkjimmy" class="footer-img"
+            ><img src="img/github__icon.svg" alt="Github"
+          /></a>
+        </div>
+      </div>
+    </main>
 
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"
