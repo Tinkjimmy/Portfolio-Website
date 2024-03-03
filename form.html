@@ -78,86 +78,34 @@
   }
     </style>
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-light">
-            <img src="img/logo3.png" alt="logo" class="page-headerimg" style="border-radius: 50%" />
-            <button class="navbar-toggler" type="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: aliceblue">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav d-flex justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html"><h3 style="color: aliceblue">Home</h3></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html"><h3 style="color: aliceblue">About</h3></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="work.html"><h3 style="color: aliceblue">Projects</h3></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="contact.html"><h3 style="color: aliceblue; text-decoration: underline">Contacts</h3><span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main class="contactmain">
-        <h1 class="contactmain.item" style="font-size: 50px">Contact Me</h1>
-        <div>
-            <p>
-                Giacomo Duca<br />
-                E-Mail: <a href="giacomo.duca0991@gmail.com">giacomo.duca0991@gmail.com</a><br />
-                Tel: <a href="tel:+393331364256">+39 333 1364 256</a>
-            </p>
-        </div>
-        <!-- Contact form -->
-        <div id="contact-form-wrapper">
-            <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" class="p-3 mb-2 bg-light text-dark rounded">
-              <input type="hidden" name="access_key" value="ff91d0ad-5aa0-40b6-ac69-1534ffa6ceb0">
-              <input type="hidden" name="subject" value="New Submission from Portfolio website">
-              <input type="hidden" name="from_name" value="Your Website Name">
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" name="email" required>
-              </div>
-              
-              <div class="form-group">
-                <label for="first-name">First Name:</label>
-                <input type="text" class="form-control" name="First Name" required>
-              </div>
-              
-              <div class="form-group">
-                <label for="phone-number">Phone Number:</label>
-                <input type="text" class="form-control" name="Phone Number" required>
-              </div>
-              
-              <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea class="form-control" name="message" required></textarea>
-              </div>
-
-              <div class="form-group">
-                <label for="attachment">Attachment (optional):</label>
-                <input type="file" class="form-control-file" name="attachment">
-              </div>
-              
-              <button type="submit" id="send-message" class="btn btn-primary">Submit Form</button>
-
-            </form>
-        </div>
-        <div class="links">
-            <p style="font-size: 20px">or find me on</p>
-            <div class="social-media">
-                <a href="https://twitter.com/GiacomoDuca" class="footer-img"><img src="img/twitter_icon.svg" alt="Twitter" /></a>
-                <a href="https://www.linkedin.com/feed/" class="footer-img"><img src="img/linkedin_icon.svg" alt="LinkedIn" /></a>
-                <a href="https://github.com/Tinkjimmy" class="footer-img"><img src="img/github__icon.svg" alt="Github" /></a>
-            </div>
-        </div>
-    </main>
+<main class="container about-main">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <img src="your-image.jpg" alt="Your Name" class="rounded-circle mx-auto d-block" style="width: 200px; height: 200px;">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Web Development Interests</h2>
+      <ul>
+        <li>Front-end development</li>
+        <li>Back-end development</li>
+        <li>Test-driven development</li>
+      </ul>
+      <h2>Biographical Info</h2>
+      <p>Include summarized biographical information here. Highlight key points from your resume that showcase your journey, achievements, and the transition into web development.</p>
+    </div>
+    <div class="col-md-6">
+      <h2>Personal Interests</h2>
+      <ul>
+        <li>Mountain biking</li>
+        <li>Swimming</li>
+        <li>Sci-fi literature</li>
+        <li>Piano playing</li>
+      </ul>
+    </div>
+  </div>
+</main>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
