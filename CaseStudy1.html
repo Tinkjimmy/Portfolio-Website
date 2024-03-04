@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>About me</title>
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/7915/7915382.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* General styling for body content */
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #fff; /* or any preferred background color */
+  color: #333; /* Text color for better readability */
+}
+
+/* Styling for main content sections */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1, h2, h3, h4, p {
+  margin: 10px 0;
+}
+
+/* Specific styles for <h4> elements and related text */
+h4 {
+  color: #007bff; /* Gives a distinct color to h4 elements */
+  margin-top: 20px; /* Adds space above h4 elements */
+}
+
+h4 + p {
+  background-color: #f0f0f0; /* Light background for paragraphs directly following h4 elements */
+  padding: 10px;
+  border-left: 5px solid #007bff; /* Adds a thematic line to relate them to the h4 */
+}
+
+/* Additional styling for improving layout */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Improving visibility and layout of lists */
+ul, ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Ensure links are visually distinct */
+a {
+  color: #007bff;
+  text-decoration: none; /* Removes underline from links */
+}
+
+a:hover {
+  text-decoration: underline; /* Adds underline on hover for better interactivity */
+}
+
+/* Styling for images if any */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1, h2, h3, h4 {
+    font-size: smaller; /* Adjusts heading sizes for smaller screens */
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light" ;>
+      <img
+        src="img/logo3.png"
+        alt="logo"
+        class="page-headerimg"
+        style="border-radius: 50%"
+      />
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        style="background-color: aliceblue"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav d-flex justify-content-end">
+          <li  >
+            <a class="nav-link" href="index.html"
+              ><h3 style="color: aliceblue; ">
+                Home
+              </h3>
+              </a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html"
+              ><h3 style="color: aliceblue;text-decoration: underline">About Me</h3></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="work.html"
+              ><h3 style="color: aliceblue">Projects</h3></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html"
+              ><h3 style="color: aliceblue">Contacts</h3></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1>Case Study: myFlix</h1>
+    <p>By Giacomo Duca</p>
+    <section id="about-the-project">
+        <h2>About the Project</h2>
+        <p>Movie app is a single-page, responsive web application
+            that allows users to registrate,update personal data,
+            browse through a rich movies list and saving movies in a
+            user specific favorite movie list.</p>
+    </section>
+    <section id="purpose-context">
+        <h2>Purpose & Context</h2>
+        <p>This application was meant to be part of my web development course, to both
+            exercise and show my newly acquired skills In full-stack javascript development.</p>
+    </section>
+    <section id="objective">
+        <h2>Objective</h2>
+        <p>The objective was to create a full project to put on display on my portfolio-website. The challenge was to build the application from the ground up both
+            in the back and in the front-end part of it.
+            The use of React was meant to give the application scalability an a better
+            UI.
+            </p>
+    </section>
+    <section id="technologies">
+        <h2>Technologies</h2>
+        <p>Utilizes Postman, React, Bootstrap, Heroku, and the MERN Stack.</p>
+    </section>
+    <section id="server-side">
+        <h2>Server Side</h2>
+        <p>On the server side I used Node.js and Express to create a REST
+            API.
+            The API was used to communicate with a MongoDB
+            database(Mongoose was used to interact with the database) using
+            GET and POST methods to fetch and save data from and to it.</p>
+        <div>
+            <h3>
+                Setup
+            </h3>
+            <p>
+                The choice of a non relational
+database granted me the
+flexible setting I needed,
+allowing me to store data in a
+more dynamic format.
+            </p>
+            <h3>
+                Models
+            </h3>
+            <p>
+                I then drew models (despite
+MongoDb being a schema-less
+database) in order to
+facilitate efficient data storage,
+retrieval, and updating.
+I created API end points and
+defined routes and handlers
+for each of them.
+            </p>
+            <h3>
+                Authentication & authorization
+            </h3>
+            <p>
+                Authentication and authorization was an important step
+                to secure the application, I installed packages for basic
+                HTTP authentications(for initial login) and JWT(JSON Web
+                Token) authentication using Passport(to authenticate
+                and authorize subsequent requests after the initial
+                login).
+                An ulterior layer of security was put in place by adding
+                Password hashing in my user schema ans integrating
+                CORS to check which domains were allowed to make
+                requests.
+            </p>
+            <h3>
+                Deployment
+            </h3>
+            <p>
+                I then deployed the API on
+Heroku , while the database
+was uploaded to MongoDB
+Atlas and i
+performed a final round of
+testing using Postman .
+            </p>
+        </div>
+    </section>
+    <section id="client-side">
+        <h2>Client Side</h2>
+        <p>I designed the client side as a single-page
+            application developed using React and React-redux.
+            The UI allows the user to view a list of movies and
+            info about them, register through the sign up view,
+            login and review his personal information in the
+            profile view.
+            </p>
+
+        <h2>Steps</h2>
+        <h3>Approach</h3>
+        <p>I designed the client side as a single-page
+            application developed using React and React-redux.
+            The UI allows the user to view a list of movies and
+            info about them, register through the sign up view,
+            login and review his personal information in the
+            profile view.</p>
+        <h3>Style</h3>
+        <p>I utilized React Bootstrap to style the app, making
+            use of its components such as Cards and Forms,
+            and leveraging the grid system for layout and
+            responsiveness.</p>
+        <h3>MVC Architecture
+        </h3>
+        <p>I chose React as a framework to create the client
+            side so that I could get familiar with the MVC
+            architecture as a design pattern, also tacking
+            advantage of its flexibility, rich ecosystem and
+            strong community support.
+            Learning how to build components in this
+            environment was extremely useful since
+            components allow for a modular approach to
+            building the UI, making the codebase easier to
+            manage and extend.
+            </p>
+        <h3>Final product</h3>
+        <p>The last step was to implement Redux, to learn
+            how it manages state changes, making them
+            predictable through a unidirectional data flow.
+            I then hosted the project on Netlify.</p>
+    </section>
+    
+    <!-- Additional sections for Setup, Models, Authentication & Authorization, Deployment, and any other details can be added here -->
+    <section id="retrospective">
+        <h2>Retrospective</h2>
+        <h3>What went well</h3>
+        <p>the initial phase of creating the API went
+            exceptionally well. The clear definition of endpoints, models,
+            and the thoughtful structuring of the database laid a strong
+            foundation for the project. Leveraging Node.js and Express
+            made the backend robust and scalable.</p>
+        <h3>Challenges</h3>
+        <h4>Time Management</h4>
+        <p>Juggling full-time work while
+            dedicating sufficient time to the project was the most
+            challenging aspect. Finding balance often meant
+            sacrificing weekends and evenings to maintain project
+            momentum.</p>
+        <h4>Learning Curve</h4>
+        <p> Grasping new concepts, especially
+            Redux and advanced React patterns, required a
+            considerable investment of time and effort.</p>
+        <h3>Future improvement</h3>
+        <p>More emphasis could be placed on implementing automated tests from the early
+            stages. Testing could enhance reliability and facilitate easier refactoring and feature
+            additions.
+            The UI could also benefit from a restyling</p>
+    </section>
+    <section id="final-thoughts">
+        <h1>Fianl Thoughts</h1>
+    <p>The experience of developing the myFlix app, from
+        backend to frontend, has been immensely rewarding. It
+        has not only solidified my understanding of full-stack
+        development principles but also enhanced my problem-solving skills and ability to learn and adapt to new
+        technologies rapidly. Balancing this project with full-time
+        work responsibilities underscored the importance of time
+        management, perseverance, and the value of practical,
+        hands-on learning.</p>
+    </section>
+
+
+</main>
+</body>
+ 
+
+  <footer class="page-footer">
+    <p style="color: aliceblue;">Look me up</p>
+    <div class="social-media">
+      
+      <a href="https://www.linkedin.com/in/giacomo-duca-15043a262/" class="footer-img"
+        ><img src="img/linkedin_icon.svg" alt="LinkedIn"
+      /></a>
+      <a href="https://github.com/Tinkjimmy" class="footer-img"
+        ><img src="img/github__icon.svg" alt="Github"
+      /></a>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha384-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/jsportfolio.js"></script>
+  <script src="js/tota11y.min.js"></script>
+</body>
+</html>
+
